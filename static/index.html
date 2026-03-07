@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Иду к врачу</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Welcome -->
+    <section id="screen-welcome" class="screen active">
+      <main class="screen-content welcome-content">
+        <h2 class="welcome-title">Добро пожаловать!</h2>
+        <div class="welcome-illustration">
+          <img src="images/welcome-hero.png" alt="" class="welcome-hero-img" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <div class="welcome-hero-placeholder">
+            <div class="welcome-phone">
+              <div class="welcome-chat-bubble welcome-chat-out"></div>
+              <div class="welcome-chat-bubble welcome-chat-in"></div>
+              <div class="welcome-chat-bubble welcome-chat-out"></div>
+            </div>
+            <span class="welcome-icon welcome-icon-sparkle">✦</span>
+            <span class="welcome-icon welcome-icon-heart">♥</span>
+          </div>
+        </div>
+        <div class="welcome-logo">
+          <img src="images/logo.svg" alt="Иду к врачу" class="welcome-logo-img">
+        </div>
+        <button type="button" class="btn-welcome-next btn-teal" data-screen="main">Далее</button>
+      </main>
+    </section>
+
+    <!-- Main menu -->
+    <section id="screen-main" class="screen">
+      <main class="screen-content main-content">
+        <div class="main-top">
+          <div class="main-logo">
+            <img src="images/logo.svg" alt="Иду к врачу" class="main-logo-img">
+          </div>
+          <div class="main-illustration">
+            <img src="images/main-hero.png" alt="" class="main-hero-img">
+          </div>
+        </div>
+        <nav class="main-nav">
+          <button type="button" class="btn-main btn-teal" data-screen="preparation">Подготовка</button>
+          <button type="button" class="btn-main btn-teal" data-screen="booking">Запись к врачу</button>
+          <button type="button" class="btn-main btn-coral" data-action="service">Сервис «Иду к врачу»</button>
+          <button type="button" class="btn-main btn-outline" data-action="write-us">Написать нам</button>
+        </nav>
+      </main>
+    </section>
+
+    <!-- Preparation directions -->
+    <section id="screen-preparation" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="main" aria-label="Назад">←</button>
+        <span class="nav-label">Подготовка</span>
+      </nav>
+      <main class="screen-content preparation-content">
+        <h2 class="section-title">Выберите направление подготовки</h2>
+        <p class="section-desc">Каждое направление содержит в себе набор адаптационных материалов: мультфильм, социальная история, игра-тренажер и рекомендации для родителей.</p>
+        <div class="cards">
+          <article class="card card-direction" data-direction="dentist">
+            <div class="card-icon card-icon-tooth"></div>
+            <div class="card-body">
+              <h3 class="card-title">Поход к стоматологу</h3>
+              <p class="card-subtitle">Подготовка к визиту стоматолога</p>
+              <p class="card-meta">4 материала</p>
+              <span class="tag tag-free">Бесплатно</span>
+            </div>
+            <button type="button" class="btn-card btn-start">Начать</button>
+          </article>
+          <article class="card card-direction" data-direction="blood">
+            <div class="card-icon card-icon-syringe"></div>
+            <div class="card-body">
+              <h3 class="card-title">Сдача анализа крови</h3>
+              <p class="card-subtitle">Подготовка к процедуре забора крови</p>
+              <p class="card-meta">3 материала</p>
+              <span class="tag tag-free">Бесплатно</span>
+            </div>
+            <button type="button" class="btn-card btn-start">Начать</button>
+          </article>
+        </div>
+      </main>
+    </section>
+
+    <!-- Dentist materials -->
+    <section id="screen-dentist" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="preparation" aria-label="Назад">←</button>
+        <span class="nav-label">Поход к стоматологу</span>
+      </nav>
+      <main class="screen-content materials-content">
+        <h2 class="section-title">Материалы для адаптации</h2>
+        <div class="material-cards">
+          <article class="material-card">
+            <div class="material-icon material-icon-video"></div>
+            <div class="material-body">
+              <span class="material-type">Мультфильм</span>
+              <h3 class="material-title">Иду к стоматологу</h3>
+              <p class="material-desc">Пошаговое объяснение ребенку хода процедуры</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <a href="https://rutube.ru/video/private/ed02a8fd70e1c94fc4757ce31bb84bcc/?p=tPToE79p2R8lRMYapilT0Q" target="_blank" rel="noopener" class="btn-material">Начать</a>
+          </article>
+          <article class="material-card">
+            <div class="material-icon material-icon-book"></div>
+            <div class="material-body">
+              <span class="material-type">Социальная история</span>
+              <h3 class="material-title">Иду к стоматологу</h3>
+              <p class="material-desc">Пошаговое объяснение ребенку хода процедуры</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <button type="button" class="btn-material" data-action="story-dentist">Начать</button>
+          </article>
+          <article class="material-card">
+            <div class="material-icon material-icon-game"></div>
+            <div class="material-body">
+              <span class="material-type">Игра-тренажер</span>
+              <h3 class="material-title">Иду к стоматологу</h3>
+              <p class="material-desc">Закрепление полученных навыков через игровую практику</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <a href="#" id="dentist-game-link" target="_blank" rel="noopener" class="btn-material btn-material-disabled">Начать</a>
+          </article>
+          <article class="material-card">
+            <div class="material-icon material-icon-doc"></div>
+            <div class="material-body">
+              <span class="material-type">Рекомендации для родителей</span>
+              <h3 class="material-title">Подготовка к стоматологической помощи детей с РАС</h3>
+              <p class="material-desc">Полные методические рекомендации по подготовке</p>
+            </div>
+            <button type="button" class="btn-material" data-action="story-dentist">Начать</button>
+          </article>
+        </div>
+      </main>
+    </section>
+
+    <!-- Blood materials -->
+    <section id="screen-blood" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="preparation" aria-label="Назад">←</button>
+        <span class="nav-label">Сдача крови</span>
+      </nav>
+      <main class="screen-content materials-content">
+        <h2 class="section-title">Материалы для адаптации</h2>
+        <div class="material-cards">
+          <article class="material-card">
+            <div class="material-icon material-icon-video"></div>
+            <div class="material-body">
+              <span class="material-type">Мультфильм</span>
+              <h3 class="material-title">Иду сдавать кровь из вены</h3>
+              <p class="material-desc">Пошаговое объяснение ребенку хода процедуры</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <button type="button" class="btn-material" disabled>Скоро</button>
+          </article>
+          <article class="material-card">
+            <div class="material-icon material-icon-book"></div>
+            <div class="material-body">
+              <span class="material-type">Социальная история</span>
+              <h3 class="material-title">Иду сдавать кровь из вены</h3>
+              <p class="material-desc">Пошаговое объяснение ребенку хода процедуры</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <button type="button" class="btn-material" data-action="story-blood">Начать</button>
+          </article>
+          <article class="material-card">
+            <div class="material-icon material-icon-game"></div>
+            <div class="material-body">
+              <span class="material-type">Игра-тренажер</span>
+              <h3 class="material-title">Иду сдавать кровь из вены</h3>
+              <p class="material-desc">Закрепление полученных навыков через игровую практику</p>
+              <span class="material-duration">4 мин</span>
+            </div>
+            <button type="button" class="btn-material" disabled>Скоро</button>
+          </article>
+        </div>
+      </main>
+    </section>
+
+    <!-- Рекомендации для родителей (стоматолог) -->
+    <section id="screen-recommendations-dentist" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="dentist" aria-label="Назад">←</button>
+        <span class="nav-label">Поход к стоматологу</span>
+      </nav>
+      <main class="screen-content recommendations-content">
+        <h2 class="recommendations-title">Рекомендации для родителей</h2>
+        <p class="recommendations-subtitle">Подготовка к стоматологической помощи детей с РАС</p>
+        <div class="recommendations-section">
+          <h3 class="recommendations-section-title">Общие рекомендации</h3>
+          <ol class="recommendations-list">
+            <li class="recommendations-item">Включать в повседневные игры с ребенком игру в стоматолога, по возможности использовать игровые стоматологические наборы (инструменты, нагрудную салфетку, перчатки и т.д.);</li>
+            <li class="recommendations-item">Учить ребенка в игровой форме держать рот открытым, можно в виде соревнования с Вами (кто дольше);</li>
+            <li class="recommendations-item">Закладывать за щеку ватку, постепенно увеличивая время ее нахождения в полости рта, начиная с 1–2 секунд;</li>
+            <li class="recommendations-item">Считать друг другу зубки и записывать результат в тетрадь;</li>
+            <li class="recommendations-item">Использовать электрическую зубную щетку сначала самим, чтобы ребенок наблюдал за Вами со стороны. Затем предложить ребенку детскую зубную щетку, чтобы ребенок привыкал к вибрации, звуку, механическим движениям. Хорошо, если найдете щетку с изображением любимого героя или в той цветовой гамме, которая нравится ребенку;</li>
+            <li class="recommendations-item">Полезно заранее познакомить ребенка на фото и видеоматериалах с клиникой, в которой будет проходить прием, с кабинетом и врачом;</li>
+            <li class="recommendations-item">Приходить на прием в удобное для ребенка время, когда он выспался и не голоден.</li>
+          </ol>
+        </div>
+        <footer class="recommendations-footer">
+          <a href="files/Рекомендации для родителей.pdf" download="Рекомендации для родителей.pdf" class="btn-footer btn-footer-download">Скачать <span class="btn-download-icon">↓</span></a>
+        </footer>
+      </main>
+    </section>
+
+    <!-- Social story: blood (slides) -->
+    <section id="screen-story-blood" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="blood" aria-label="Назад">←</button>
+        <span class="nav-label">Сдача крови</span>
+      </nav>
+      <main class="screen-content story-content">
+        <div class="story-slide">
+          <div class="story-illustration" id="story-blood-illustration">
+            <img id="story-blood-illustration-img" alt="" class="story-img">
+          </div>
+          <div class="story-text" id="story-blood-text"></div>
+        </div>
+        <div class="story-nav">
+          <button type="button" class="btn-story btn-prev" id="story-blood-prev">Назад</button>
+          <button type="button" class="btn-story btn-next" id="story-blood-next">Вперед</button>
+        </div>
+      </main>
+    </section>
+
+    <!-- Social story: dentist (slides) -->
+    <section id="screen-story-dentist" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="dentist" aria-label="Назад">←</button>
+        <span class="nav-label">Поход к стоматологу</span>
+      </nav>
+      <main class="screen-content story-content">
+        <div class="story-slide">
+          <div class="story-illustration" id="story-illustration">
+            <img id="story-illustration-img" alt="" class="story-img">
+          </div>
+          <div class="story-text" id="story-text"></div>
+        </div>
+        <div class="story-nav">
+          <button type="button" class="btn-story btn-prev" id="story-prev">Назад</button>
+          <button type="button" class="btn-story btn-next" id="story-next">Вперед</button>
+        </div>
+      </main>
+    </section>
+
+    <!-- Booking placeholder -->
+    <section id="screen-booking" class="screen">
+      <nav class="nav-bar">
+        <button type="button" class="btn-back" data-screen="main" aria-label="Назад">←</button>
+        <span class="nav-label">Запись к врачу</span>
+      </nav>
+      <main class="screen-content">
+        <p class="placeholder-text">Раздел «Запись к врачу» в разработке.</p>
+      </main>
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
