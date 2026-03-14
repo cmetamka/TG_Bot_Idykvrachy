@@ -1,4 +1,5 @@
 .env
+feedback_replies.json
 __pycache__/
 *.pyc
 .venv/

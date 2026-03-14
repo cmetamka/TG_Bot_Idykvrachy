@@ -4,121 +4,121 @@ IMAGE: images/story-dentist/dentist-slide-01.png
 
 --- SLIDE 2 ---
 TEXT: Я иду в стоматологию, чтобы врач проверил мои зубки.
-IMAGE: images/story-dentist/dentist-slide-02.jpeg
+IMAGE: images/story-dentist/dentist-slide-01.jpeg
 
 --- SLIDE 3 ---
 TEXT: Когда я приду в стоматологию, я надену бахилы.
-IMAGE: images/story-dentist/dentist-slide-03.png
+IMAGE: images/story-dentist/dentist-slide-02.png
 
 --- SLIDE 4 ---
 TEXT: Потом я сдам куртку в гардероб.
-IMAGE: images/story-dentist/dentist-slide-04.jpeg
+IMAGE: images/story-dentist/dentist-slide-03.jpeg
 
 --- SLIDE 5 ---
 TEXT: Я пойду с мамой в регистратуру, чтобы врач узнал, что я пришел.
-IMAGE: images/story-dentist/dentist-slide-05.jpeg
+IMAGE: images/story-dentist/dentist-slide-04.jpeg
 
 --- SLIDE 6 ---
 TEXT: После этого, я буду сидеть спокойно и ждать своей очереди. В холле может быть шумно.
-IMAGE: images/story-dentist/dentist-slide-06.jpeg
+IMAGE: images/story-dentist/dentist-slide-05.jpeg
 
 --- SLIDE 7 ---
 TEXT: Когда меня позовут, я зайду в кабинет
-IMAGE: images/story-dentist/dentist-slide-07.jpeg
+IMAGE: images/story-dentist/dentist-slide-06.jpeg
 
 --- SLIDE 8 ---
 TEXT: Там меня встретит врач-стоматолог
-IMAGE: images/story-dentist/dentist-slide-08.jpeg
+IMAGE: images/story-dentist/dentist-slide-07.jpeg
 
 --- SLIDE 9 ---
 TEXT: Я поздороваюсь с врачом
-IMAGE: images/story-dentist/dentist-slide-09.jpeg
+IMAGE: images/story-dentist/dentist-slide-08.jpeg
 
 --- SLIDE 10 ---
 TEXT: Доктор пригласит меня сесть в кресло
-IMAGE: images/story-dentist/dentist-slide-10.jpeg
+IMAGE: images/story-dentist/dentist-slide-9.jpeg
 
 --- SLIDE 11 ---
 TEXT: Я сяду в кресло, как скажет доктор.
-IMAGE: images/story-dentist/dentist-slide-11.jpeg
+IMAGE: images/story-dentist/dentist-slide-10.jpeg
 
 --- SLIDE 12 ---
 TEXT: Кресло может двигаться вниз и вверх
-IMAGE: images/story-dentist/dentist-slide-12.jpeg
+IMAGE: images/story-dentist/dentist-slide-11.jpeg
 
 --- SLIDE 13 ---
 TEXT: Я положу голову на подголовник, а ноги ровно положу на подставку
-IMAGE: images/story-dentist/dentist-slide-13.jpeg
+IMAGE: images/story-dentist/dentist-slide-12.jpeg
 
 --- SLIDE 14 ---
 TEXT: Я буду сидеть спокойно, потому что это нестрашно
-IMAGE: images/story-dentist/dentist-slide-14.png
+IMAGE: images/story-dentist/dentist-slide-13.png
 
 --- SLIDE 15 ---
 TEXT: Над креслом висит большая яркая лампа. Она нужна врачу, чтобы лучше видеть.
-IMAGE: images/story-dentist/dentist-slide-15.jpeg
+IMAGE: images/story-dentist/dentist-slide-14.jpeg
 
 --- SLIDE 16 ---
 TEXT: Врач наденет на меня салфетку.
-IMAGE: images/story-dentist/dentist-slide-16.jpeg
+IMAGE: images/story-dentist/dentist-slide-15.jpeg
 
 --- SLIDE 17 ---
 TEXT: Врач наденет перчатки
-IMAGE: images/story-dentist/dentist-slide-17.jpeg
+IMAGE: images/story-dentist/dentist-slide-16.jpeg
 
 --- SLIDE 18 ---
 TEXT: Во время приема я не буду хватать врача за руки, чтобы не мешать
-IMAGE: images/story-dentist/dentist-slide-18.jpeg
+IMAGE: images/story-dentist/dentist-slide-17.jpeg
 
 --- SLIDE 19 ---
 TEXT: Я не буду кусаться
-IMAGE: images/story-dentist/dentist-slide-19.jpeg
+IMAGE: images/story-dentist/dentist-slide-18.jpeg
 
 --- SLIDE 20 ---
 TEXT: Врач будет использовать специальные инструменты, чтобы осмотреть меня
-IMAGE: images/story-dentist/dentist-slide-20.jpeg
+IMAGE: images/story-dentist/dentist-slide-19.jpeg
 
 --- SLIDE 21 ---
 TEXT: Врач попросит меня открыть рот и я выполню его просьбу.
-IMAGE: images/story-dentist/dentist-slide-21.jpeg
+IMAGE: images/story-dentist/dentist-slide-20.jpeg
 
 --- SLIDE 22 ---
 TEXT: Доктор осмотрит мои зубки с помощью зеркала. Это не больно.
-IMAGE: images/story-dentist/dentist-slide-22.jpeg
+IMAGE: images/story-dentist/dentist-slide-21.jpeg
 
 --- SLIDE 23 ---
 TEXT: Врач может использовать специальный инструмент, чтобы полечить мои зубы. Он шумит.
-IMAGE: images/story-dentist/dentist-slide-23.jpeg
+IMAGE: images/story-dentist/dentist-slide-22.jpeg
 
 --- SLIDE 24 ---
 TEXT: Я прополощу рот и выплюну воду, когда доктор скажет.
-IMAGE: images/story-dentist/dentist-slide-24.jpeg
+IMAGE: images/story-dentist/dentist-slide-23.jpeg
 
 --- SLIDE 25 ---
 TEXT: Врач может поставить мне в рот трубку для отвода слюны и воды. Она может шуметь.
-IMAGE: images/story-dentist/dentist-slide-25.jpeg
+IMAGE: images/story-dentist/dentist-slide-24.jpeg
 
 --- SLIDE 26 ---
 TEXT: Врач польет водичкой на мои зубы чтобы они стали
-IMAGE: images/story-dentist/dentist-slide-26.jpeg
+IMAGE: images/story-dentist/dentist-slide-25.jpeg
 
 --- SLIDE 27 ---
 TEXT: Врач посушит мои зубки воздухом, чтобы они стали сухими
-IMAGE: images/story-dentist/dentist-slide-27.jpeg
+IMAGE: images/story-dentist/dentist-slide-26.jpeg
 
 --- SLIDE 28 ---
 TEXT: Осмотр окончен.
-IMAGE: images/story-dentist/dentist-slide-28.jpeg
+IMAGE: images/story-dentist/dentist-slide-27.jpeg
 
 --- SLIDE 29 ---
 TEXT: Врач расскажет мне, как ухаживать за зубками.
-IMAGE: images/story-dentist/dentist-slide-29.jpeg
+IMAGE: images/story-dentist/dentist-slide-28.jpeg
 
 --- SLIDE 30 ---
 TEXT: Я молодец! Теперь мои зубы будут здоровы.
-IMAGE: images/story-dentist/dentist-slide-30.jpeg
+IMAGE: images/story-dentist/dentist-slide-29.jpeg
 
 --- SLIDE 31 ---
 TEXT: Врач даст мне подарок!
-IMAGE: 
+IMAGE: images/story-dentist/dentist-slide-30.jpeg
 

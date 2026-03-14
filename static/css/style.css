@@ -416,14 +416,14 @@ body {
   flex-shrink: 0;
 }
 
-/* Иконка зуба — контур, корона и волнистые корни */
+/* Иконка зуба — «Поход к стоматологу» */
 .card-icon-tooth {
-  background: var(--teal-light) url("../images/icon-tooth.svg") center/26px no-repeat;
+  background: var(--teal-light) url("../images/icon-tooth.png") center/28px no-repeat;
 }
 
-/* Иконка шприца — контур, диагонально (игла вверху справа) */
+/* Иконка шприца — «Сдача анализа крови» */
 .card-icon-syringe {
-  background: var(--teal-light) url("../images/icon-syringe.svg") center/26px no-repeat;
+  background: var(--teal-light) url("../images/icon-syringe.png") center/28px no-repeat;
 }
 
 .card-body {
@@ -808,4 +808,450 @@ a.btn-material-disabled {
 .btn-download-icon {
   font-size: 18px;
   line-height: 1;
+}
+
+/* Иконки для раздела «Запись к врачу» — цвет как у основных кнопок (#006879) */
+.booking-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.booking-icon-calendar {
+  background-image: url("../images/booking/icon-calendar.svg");
+}
+
+.booking-icon-clock {
+  background-image: url("../images/booking/icon-clock.svg");
+}
+
+.booking-icon-phone {
+  background-image: url("../images/booking/icon-phone.svg");
+}
+
+.booking-icon-geo {
+  background-image: url("../images/booking/icon-geo.svg");
+}
+
+.booking-icon-people {
+  background-image: url("../images/booking/icon-people.svg");
+}
+
+/* --- Запись к врачу --- */
+.booking-content {
+  padding-bottom: 32px;
+}
+
+.booking-view.hidden {
+  display: none !important;
+}
+
+.booking-view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking-section {
+  margin-bottom: 4px;
+}
+
+.booking-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.booking-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.booking-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.booking-tab {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.booking-tab.active {
+  border-color: var(--teal);
+  background: var(--teal-light);
+  color: var(--teal);
+}
+
+.booking-tab-panel {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-tab-panel.active {
+  display: flex;
+}
+
+.booking-empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-card {
+  background: var(--teal-light);
+  border-radius: var(--radius);
+  padding: 16px;
+  border: 1px solid rgba(0, 104, 121, 0.15);
+}
+
+.booking-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.booking-card-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.booking-card-meta-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.booking-card-meta-icon.booking-icon {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+
+.booking-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.booking-card-btn {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.booking-card-btn-reschedule {
+  background: var(--teal);
+  color: white;
+}
+
+.booking-card-btn-cancel {
+  background: rgba(231, 110, 112, 0.15);
+  color: var(--coral);
+  border: 2px solid var(--coral);
+}
+
+/* Карточка клиники */
+.booking-clinic-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 16px;
+  border: 2px solid var(--border);
+}
+
+.booking-clinic-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.booking-clinic-card-spec {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.booking-clinic-card-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.booking-clinic-card-address-icon {
+  flex-shrink: 0;
+}
+
+.booking-clinic-card-address-icon.booking-icon {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+
+.booking-clinic-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.booking-clinic-price {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.booking-clinic-price-value {
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.booking-clinic-btn {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  background: var(--teal);
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Форма записи */
+.booking-form-block {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 16px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.booking-form-block-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.booking-form-block-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.booking-field {
+  margin-bottom: 16px;
+}
+
+.booking-field:last-child {
+  margin-bottom: 0;
+}
+
+.booking-field-icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.booking-field-icon.booking-icon {
+  font-size: 0;
+}
+
+.booking-field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.booking-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+  color: var(--text);
+  background: var(--card-bg);
+}
+
+.booking-input:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.booking-field-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.booking-time-slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.booking-time-slot {
+  padding: 10px 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.booking-time-slot.active {
+  border-color: var(--teal);
+  background: var(--teal-light);
+  color: var(--teal);
+}
+
+.btn-booking-cta {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  background: var(--teal);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btn-booking-submit {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  background: var(--teal);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Модалка отмены */
+.booking-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 16px 24px;
+  pointer-events: none;
+}
+
+.booking-modal.hidden {
+  display: none;
+}
+
+.booking-modal:not(.hidden) {
+  pointer-events: auto;
+}
+
+.booking-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.booking-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: var(--card-bg);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 24px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.booking-modal-text {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.booking-modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-modal-secondary {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-modal-danger {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 2px solid var(--coral);
+  background: var(--card-bg);
+  color: var(--coral);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }

@@ -202,8 +202,11 @@ def main():
                     "Не удалось получить HTTPS. Укажите NGROK_AUTH_TOKEN в .env или установите cloudflared."
                 )
     elif not use_tunnel:
-        os.environ["MINIAPP_URL"] = ""
-        print("Режим без туннеля: Mini App только в браузере — http://localhost:" + str(PORT))
+        if not mini_url or not mini_url.startswith("https://"):
+            os.environ["MINIAPP_URL"] = ""
+            print("Режим без туннеля: Mini App только в браузере — http://localhost:" + str(PORT))
+        else:
+            print("Режим без туннеля: кнопка «Начать» откроет Mini App по адресу из .env — " + mini_url)
 
     # Бот читает MINIAPP_URL при импорте — env уже установлен
     import bot
